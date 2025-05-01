@@ -1,9 +1,9 @@
 <?php
 
-$host = "localhost:3306";
-$username = "root";
-$password = "";
-$db = "deal_project";
+$host = getenv("DB_HOST");
+$username = getenv("DB_USER");
+$password = getenv("DB_PASS");
+$database = getenv("DB_NAME");
 $conn = mysqli_connect($host,$username,$password,$db);
 
 if (!$conn) {
