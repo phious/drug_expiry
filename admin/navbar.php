@@ -3,7 +3,7 @@
             <div class="navbar-header">
                 <div class="navbar-brand"> <img src="../image/logo.png" alt="logo" height="60"></div>
 				<h1 class="navbar-brand" style="text-align:center;color: #fff;font-size: 30px">
-                   Drug Expiry Alert System</h1>
+                Drug Expiry Management System For EPSA</h1>
             </div>
            
             <ul class="nav navbar-top-links navbar-right">
