@@ -2,7 +2,6 @@
 Client Organization: Ethiopian Pharmaceuticals Supply Agency (EPSA)
 Project Type: Academic Assignment – Software Project Management
 <<<<<<< HEAD
-Developer: [Your Name or Team Name]
 =======
 Developer: Yonatan Amare
 >>>>>>> 369b22dfe3070b8e6d11c620cff17b69de469879
