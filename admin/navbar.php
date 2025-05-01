@@ -1,7 +1,7 @@
 <!-- Navigation -->
         <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
             <div class="navbar-header">
-                <div class="navbar-brand"> <img src="../../img/dana.jpg" alt="logo" height="60"></div>
+                <div class="navbar-brand"> <img src="../image/logo.png" alt="logo" height="60"></div>
 				<h1 class="navbar-brand" style="text-align:center;color: #fff;font-size: 30px">
                    Drug Expiry Alert System</h1>
             </div>
