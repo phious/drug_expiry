@@ -2,7 +2,7 @@
 // Be sure to include the file you've just downloaded
 require_once 'AfricasTalkingGateway.php';
 // Specify your authentication credentials
-$username   = "yonatanamare5000@gmail.com";
+$username   = "phious";
 $apikey     = "atsk_514e8c3bc0a324383592ce0e16138a54dd9d865332eded60e7d49b98fc011165e468f486";
 
 $gateway    = new AfricasTalkingGateway($username, $apikey);
