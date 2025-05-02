@@ -3,7 +3,7 @@
 require_once 'AfricasTalkingGateway.php';
 // Specify your authentication credentials
 $username   = "yonatanamare5000@gmail.com";
-$apikey     = "d9fc94bb1906f67433dec8ebd2d9e9de80757b94c69d567b4d727bf1bad3064f";
+$apikey     = "atsk_514e8c3bc0a324383592ce0e16138a54dd9d865332eded60e7d49b98fc011165e468f486";
 
 $gateway    = new AfricasTalkingGateway($username, $apikey);
 
