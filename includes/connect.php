@@ -1,13 +1,19 @@
 <?php
 
-$host = getenv("drug-expiry-db-yonatanamare5000-3761.l.aivencloud.com");
-$username = getenv("avnadmin");
-$password = getenv("AVNS_lyiD-Owz2nkljyhMlV1");
-$database = getenv("defaultdb");
-$conn = mysqli_connect($host,$username,$password,$database);
+// Retrieving values from environment variables
+$host = getenv('DB_HOST');
+$username = getenv('DB_USER');
+$password = getenv('DB_PASS');
+$database = getenv('DB_NAME');
 
+// Establish the connection
+$conn = mysqli_connect($host, $username, $password, $database);
+
+// Check if the connection was successful
 if (!$conn) {
-	die("Connection failed: " . mysqli_connect_error());
+    die("Connection failed: " . mysqli_connect_error());
 }
+
+echo "Connected successfully";
 
 ?>
