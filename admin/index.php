@@ -1,7 +1,7 @@
 <?php include('../includes/core.inc.php'); ?>
 <?php include('header.php'); ?>
 <?php
-require_once 'includes/session.php';
+require_once '../session.php';
 ?>
 <body>
 <div id="wrapper">
