@@ -1,5 +1,8 @@
 <?php include('../includes/core.inc.php'); ?>
 <?php include('header.php'); ?>
+<?php
+require_once 'includes/session.php';
+?>
 <body>
 <div id="wrapper">
 <?php include('navbar.php'); ?>
