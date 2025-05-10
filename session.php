@@ -2,7 +2,7 @@
 // Start session only if none is active
 if (session_status() === PHP_SESSION_NONE) {
     session_start([
-        'cookie_secure' => isset($_SERVER['HTTPS']), // Secure cookies if HTTPS
+        
         'cookie_httponly' => true,
         'use_strict_mode' => true,
     ]);
