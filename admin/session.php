@@ -9,7 +9,7 @@ include('../includes/connect.php');
 
 // Check if session ID is set and not empty
 if (!isset($_SESSION['id']) || empty($_SESSION['id'])) {
-    header("Location: ../login.php");
+    header("Location: ../index.php");
     exit();
 }
 
@@ -22,7 +22,7 @@ $sq = mysqli_query($conn, "SELECT * FROM `admin` WHERE id = '$admin_id'");
 if (!$sq) {
     error_log("Database query failed: " . mysqli_error($conn));
     session_destroy();
-    header("Location: ../login.php?error=db_error");
+    header("Location: ../index.php?error=db_error");
     exit();
 }
 
@@ -35,7 +35,7 @@ if (mysqli_num_rows($sq) > 0) {
     $phone_number = isset($srow['phone_number']) ? $srow['phone_number'] : '';
 } else {
     session_destroy();
-    header("Location: ../login.php?error=invalid_user");
+    header("Location: ../index.php?error=invalid_user");
     exit();
 }
 ?>
