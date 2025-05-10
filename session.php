@@ -12,6 +12,6 @@
 	$srow=mysqli_fetch_array($sq);
 	
 	$user=$srow['Username'];
-	$fullname = $srow['Fullname'];
+	$fullname = $srow['firstname'];
 
 ?>
