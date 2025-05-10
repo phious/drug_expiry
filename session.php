@@ -1,9 +1,7 @@
 <?php
 // Start session only if none is active
 if (session_status() === PHP_SESSION_NONE) {
-    session_start([
-       
-    ]);
+    session_start();
 }
 
 // Check for valid session
