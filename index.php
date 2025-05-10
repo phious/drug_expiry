@@ -1,5 +1,5 @@
 <?php
-require_once 'session.php'; // session_start() is already called here, so no need to call it again
+require_once 'session.php'; // session_start() is already called in session.php
 // Rest of the page code follows
 ?>
 <?php 	

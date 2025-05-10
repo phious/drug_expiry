@@ -1,6 +1,10 @@
 <?php
-session_start();
-ob_start();
+// Start session only if none is active
+if (session_status() === PHP_SESSION_NONE) {
+    session_start();
+    ob_start();
+}
+
 include('../includes/connect.php');
 
 // Check if session ID is set and not empty
