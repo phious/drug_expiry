@@ -66,33 +66,42 @@ $(document).ready(function(){
         changeMonth: true,
         changeYear: true
     });
-     // Handle Add Drug Form Submission
-    $('#addproduct form').on('submit', function(e) {
-        e.preventDefault(); // Prevent default form submission
+   // Handle Add Drug Form Submission
+$('#addproduct form').on('submit', function(e) {
+    e.preventDefault(); // Prevent default form submission
 
-        var form = $(this);
-        var formData = form.serialize();
+    var form = $(this);
+    var formData = form.serialize();
 
-        $.ajax({
-            url: form.attr('action'), // ../includes/addDrugs.php
-            method: 'POST',
-            data: formData,
-            dataType: 'json', // Expect JSON response
-            success: function(response) {
-                if (response.success) {
-                    alert('Drug added successfully!');
-                    $('#addproduct').modal('hide'); // Close modal
-                    form[0].reset(); // Reset form
-                    location.reload(); // Reload page to update table
-                } else {
-                    alert('Error: ' + response.message);
-                }
-            },
-            error: function(xhr, status, error) {
-                alert('Error adding drug: ' + xhr.responseText);
+    // Start loading spinner or disable the submit button (optional)
+    var submitButton = form.find('button[type="submit"]');
+    submitButton.prop('disabled', true); // Disable the button to prevent double submit
+
+    $.ajax({
+        url: form.attr('action'), // ../includes/addDrugs.php
+        method: 'POST',
+        data: formData,
+        dataType: 'json', // Expect JSON response
+        success: function(response) {
+            if (response.success) {
+                alert('Drug added successfully!');
+                $('#addproduct').modal('hide'); // Close modal
+                form[0].reset(); // Reset form
+                location.reload(); // Reload page to update table
+            } else {
+                alert('Error: ' + response.message);
             }
-        });
+        },
+        error: function(xhr, status, error) {
+            alert('Error adding drug: ' + xhr.responseText);
+        },
+        complete: function() {
+            // Re-enable the submit button when done
+            submitButton.prop('disabled', false);
+        }
     });
+});
+
 
 
 
