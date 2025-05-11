@@ -8,7 +8,6 @@
     <meta name="author" content="">
 
     <title>Drug Expiry Alert System for EPSA </title>
-	
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="../vendor/datatables-plugins/dataTables.bootstrap.css" rel="stylesheet">
     <link href="../vendor/datatables-responsive/dataTables.responsive.css" rel="stylesheet">

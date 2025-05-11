@@ -4,6 +4,7 @@
 <!-- Bootstrap 3 (if you're using .modal(), not Bootstrap 4 classes like modal-dialog-centered) -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
+
 <!-- Optional: if you're using bootstrap-datepicker -->
 <script src="../vendor/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js"></script>
 
