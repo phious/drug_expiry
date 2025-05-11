@@ -3,7 +3,7 @@
 <body style="background-image: url('image/download.jpg'); background-size:cover;">
 	<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
             <div class="navbar-header">
-				<h1 class="navbar-brand" style="text-align:center;color: #fff;font-size: 30px;margin-left: 450px;text-transform: uppercase;">Drug Expiry Alert System</h1>
+				<h1 class="navbar-brand" style="text-align:center;color: #fff;font-size: 30px;margin-left: 450px;text-transform: uppercase;">welocme to Ethiopian Pharmaceuticals Supply Agency Drug Expiry Alert System </h1>
             </div>
         </nav>
 <div class="container">
