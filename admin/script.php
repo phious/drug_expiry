@@ -5,6 +5,8 @@
 	<script src="../vendor/metisMenu/metisMenu.min.js"></script>
     <script src="../vendor/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js"></script>
     <script src="../vendor/bootstrap-datepicker/dist/locales/bootstrap-datepicker.de.min.js"></script>
+     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
 
 
 	<!-- DataTables JavaScript -->
