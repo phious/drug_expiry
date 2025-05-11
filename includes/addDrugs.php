@@ -24,8 +24,8 @@ if (!isset($_SESSION['id'])) {
 $batch = check_input($_POST['batch'] ?? '');
 $name = check_input($_POST['name'] ?? '');
 $desc = check_input($_POST['desc'] ?? '');
-$pro_date = check_input($_POST['pro_date'] ?? '');
-$ex_date = check_input($_POST['ex_date'] ?? '');
+$pro_date = str_replace('/', '-', check_input($_POST['pro_date'] ?? '')); // Convert date format
+$ex_date = str_replace('/', '-', check_input($_POST['ex_date'] ?? ''));   // Convert date format
 $qty = check_input($_POST['qty'] ?? '');
 $price = check_input($_POST['price'] ?? '');
 $status = 2;
@@ -34,6 +34,12 @@ $status = 2;
 if (empty($batch) || $batch == "choose a Batch" || empty($name) || empty($pro_date) || empty($ex_date)) {
     error_log("Invalid input data");
     echo json_encode(['success' => false, 'message' => 'Please fill all required fields and select a valid batch']);
+    exit;
+}
+
+if (!is_numeric($qty) || !is_numeric($price)) {
+    error_log("Invalid quantity or price");
+    echo json_encode(['success' => false, 'message' => 'Quantity and price must be numeric']);
     exit;
 }
 
