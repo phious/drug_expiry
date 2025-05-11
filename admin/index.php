@@ -15,7 +15,7 @@
         <div class="card mb-4">
           <i class="fa fa-product-hunt"></i>
           <div class="card-body">
-            <h2>Total Drug List | ሙሉ የመድሃኒት ዝርዝሮች</h2>
+            <h2>Total Drug List<br>ሙሉ የመድሃኒት ዝርዝሮች</h2>
             <h2 class="card-title batch-list">
               <?php
               $batch_query = mysqli_query($conn, "SELECT * FROM drug_table");
@@ -34,7 +34,7 @@
         <div class="card mb-4">
           <i class="fa fa-list"></i>
           <div class="card-body">
-            <h2>Distribution Center | የስርጭት ማዕከላት</h2>
+            <h2>Distribution Center <br> የስርጭት ማዕከላት</h2>
             <h2 class="card-title batch-list">
               <?php
               $dc_query = mysqli_query($conn, "SELECT * FROM distribution_center");
@@ -74,7 +74,7 @@
         <div class="card mb-4">
           <i class="fa fa-times"></i>
           <div class="card-body">
-            <h2>Expiry Drugs | ጊዜ ያለፈባቸው መድኃኒቶች</h2>
+            <h2>Expiry Drugs <br> ጊዜ ያለፈባቸው መድኃኒቶች</h2>
             <h2 class="card-title batch-list">
               <?php
               $expired = mysqli_query($conn, "SELECT status FROM drug_table WHERE status = 0");
@@ -93,7 +93,7 @@
         <div class="card mb-4">
           <i class="fa fa-trash"></i>
           <div class="card-body">
-            <h2>Trashed Drugs</h2>
+            <h2>Trashed Drugs <br> የተጣሉ መድኃኒቶች</h2>
             <h2 class="card-title batch-list">
               <?php
               $trashed = mysqli_query($conn, "SELECT * FROM drug_table WHERE status = 'trashed'");
