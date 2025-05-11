@@ -7,7 +7,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Drug Expiry Management System For EPSA</title>
+    <title>Drug Expiry Alert System For EPSA</title>
 	
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="../vendor/datatables-plugins/dataTables.bootstrap.css" rel="stylesheet">

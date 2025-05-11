@@ -1,7 +1,7 @@
 <!-- Navigation -->
         <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
             <div class="navbar-header">
-				<h1 class="navbar-brand" style="text-align:center;color: #fff; font-size: 30px">Drug Expiry Management System for EPSA</h1>
+				<h1 class="navbar-brand" style="text-align:center;color: #fff; font-size: 30px">Drug Expiry Alert System for EPSA</h1>
             </div>
            
             <ul class="nav navbar-top-links navbar-right">
