@@ -53,7 +53,7 @@
         <div class="card mb-4">
           <i class="fa fa-book"></i>
           <div class="card-body">
-            <h2>Batch | ባች</h2>
+            <h2>Batch <br> ባች</h2>
             <h2 class="card-title batch-list">
               <?php
               $batch_query = mysqli_query($conn, "SELECT * FROM batch");
