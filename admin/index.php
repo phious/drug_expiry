@@ -26,7 +26,7 @@
 		<div class="card mb-4">
           <i class="fa fa-list"></i>
           <div class="card-body">
-            <h2>Distribution Center</h2>
+            <h2>Distribution Center | የስርጭት ማዕከላትላት</h2>
             <h2 class="card-title"><?php $batch_query = mysqli_query($conn, "SELECT * FROM distribution_center");
                                                       $row_count = mysqli_num_rows($batch_query);
                                                          echo $row_count; ?></h2>
@@ -40,7 +40,7 @@
 		<div class="card mb-4">
            <i class="fa fa-book"></i>
           <div class="card-body">
-            <h2>Batch</h2>
+            <h2>Batch | ባች</h2>
             <h2 class="card-title" id="batch_list"><?php $batch_query = mysqli_query($conn, "SELECT * FROM batch");
                                                       $row_count = mysqli_num_rows($batch_query);
                                                          echo $row_count; ?></h2>
@@ -56,7 +56,7 @@
         <div class="card mb-4">
            <i class="fa fa-times"></i>
           <div class="card-body">
-            <h2>Expiry Drugs</h2>
+            <h2>Expiry Drugs | ጊዜ ያለፈባቸው መድኃኒቶች</h2>
             <h2 class="card-title" id="batch_list"><?php $expiry = mysqli_query($conn, "SELECT status FROM drug_table WHERE status= 0");
             $row_count = mysqli_num_rows($expiry);
                echo $row_count; ?></h2>
