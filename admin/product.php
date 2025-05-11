@@ -2,10 +2,7 @@
       include('../includes/core.inc.php'); ?>
 <?php include('header.php'); ?>
 <body>
-    <!-- jQuery -->
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<!-- Bootstrap JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
 <div id="wrapper">
 <?php include('navbar.php'); ?>
 <div style="height:50px;"></div>
