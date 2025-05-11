@@ -20,12 +20,14 @@
                             <input type="text" style="width:400px; text-transform:capitalize;" class="form-control" name="desc" required>
                         </div>
 						<div class="form-group input-group">
-    <span style="width:120px;" class="input-group-addon">Choose Batch:</span>
-    <select style="width:400px;" class="form-control" name="batch" required>
-        <option value="" disabled selected>Choose a Batch</option>
-        <?php echo selectBatch(); ?>
-    </select>
-</div>
+                             <span style="width:120px;" class="input-group-addon">Choose Batch:</span>
+                              <select style="width:400px;" class="form-control" name="batch" required>
+                               <option value="" disabled selected>Choose a Batch</option>
+                              <?php
+                               echo selectBatch();
+                                                          ?>
+                                    </select>
+                                 </div>
                         <div class="form-group input-group date" data-provide="datepicker">
                             <span  class="input-group-addon">Production Date:</span>
                             <input type="text" class="form-control" name="pro_date" required readonly="">
