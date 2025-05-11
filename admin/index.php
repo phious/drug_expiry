@@ -70,7 +70,7 @@
         <div class="card mb-4">
            <i class="fa fa-trash"></i>
           <div class="card-body">
-            <h2>Tashed Drugs</h2>
+            <h2>Trashed Drugs</h2>
             <h2 class="card-title" id="batch_list">0</h2>
           </div>
           <div class="card-footer text-muted">
