@@ -12,7 +12,7 @@
 		<div class="card mb-4">
          <i class="fa fa-product-hunt"></i>
           <div class="card-body">
-            <h2>Total Drug List</h2>
+            <h2>Total Drug List | ሙሉ የመድሃኒት ዝርዝሮች </h2>
             <h2 class="card-title"><?php $batch_query = mysqli_query($conn, "SELECT * FROM drug_table");
                                                       $row_count = mysqli_num_rows($batch_query);
                                                          echo $row_count; ?></h2>
