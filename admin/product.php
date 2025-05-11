@@ -2,7 +2,12 @@
       include('../includes/core.inc.php'); ?>
 <?php include('header.php'); ?>
 <body>
-
+<?php
+// admin/product.php (add at the top of the container-fluid div)
+if (isset($_GET['success'])) {
+    echo '<div class="alert alert-success">' . htmlspecialchars($_GET['success']) . '</div>';
+}
+?>
 <div id="wrapper">
 <?php include('navbar.php'); ?>
 <div style="height:50px;"></div>
