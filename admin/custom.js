@@ -68,39 +68,45 @@ $(document).ready(function(){
     });
    // Handle Add Drug Form Submission
 $('#addproduct form').on('submit', function(e) {
-    e.preventDefault(); // Prevent default form submission
+    e.preventDefault(); // Stop default form submission
 
-    var form = $(this);
-    var formData = form.serialize();
+    const form = $(this);
+    const formData = form.serialize();
+    const submitButton = form.find('button[type="submit"]');
 
-    // Start loading spinner or disable the submit button (optional)
-    var submitButton = form.find('button[type="submit"]');
-    submitButton.prop('disabled', true); // Disable the button to prevent double submit
+    submitButton.prop('disabled', true);
 
     $.ajax({
-        url: form.attr('action'), // ../includes/addDrugs.php
+        url: form.attr('action'),
         method: 'POST',
         data: formData,
-        dataType: 'json', // Expect JSON response
+        dataType: 'json',
         success: function(response) {
             if (response.success) {
-                alert('Drug added successfully!');
-                $('#addproduct').modal('hide'); // Close modal
-                form[0].reset(); // Reset form
-                location.reload(); // Reload page to update table
+                alert('✅ Drug added successfully!');
+                $('#addproduct').modal('hide');
+                form[0].reset();
+                // Optionally use AJAX to refresh the table instead of full reload
+                location.reload();
             } else {
-                alert('Error: ' + response.message);
+                alert('❌ Error: ' + (response.message || 'Unknown error occurred.'));
             }
         },
-        error: function(xhr, status, error) {
-            alert('Error adding drug: ' + xhr.responseText);
+        error: function(xhr) {
+            let message = '❌ An unexpected error occurred.';
+            if (xhr.responseJSON && xhr.responseJSON.message) {
+                message = '❌ ' + xhr.responseJSON.message;
+            } else if (xhr.responseText) {
+                message = '❌ ' + xhr.responseText;
+            }
+            alert(message);
         },
         complete: function() {
-            // Re-enable the submit button when done
             submitButton.prop('disabled', false);
         }
     });
 });
+
 
 
 
